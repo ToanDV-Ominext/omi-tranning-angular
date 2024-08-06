@@ -1,0 +1,13 @@
+/*  画面全体を最前面(z-index: 1)に配置する
+ *      →ローディング中、loading.component.htmlが最前面となりボタン押下などは出来なくなる。
+ */
+.loading-shade {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
